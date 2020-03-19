@@ -23,7 +23,9 @@ This hypothetical source code repository contains the source code for a typical 
 
 ### Continuous Integration
 Libraries and applications contain different testing strategies: 
- * unit testing, with no external dependencies)
+ * unit testing, with no external dependencies
+ * static analysis, has no external dependencies, may be slower, and some aspects may be non-critical, in some cases, not blocking the build pipeline
+ * security analysis, a kind of static analysis, but critical enough to block the build pipeline
  * integration testing, requires external services like a database or other application process
  * browser testing, requires external resources such as worker nodes to drive a browser-testing framework, may need to deploy and start the application
  * monitoring tests, requires a client and network access to exercise a deployed application
