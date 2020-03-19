@@ -8,6 +8,9 @@ java {
 }
 
 dependencies {
+    implementation(project(":core-domain"))
+
+
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.5.2")
     testRuntimeOnly("org.junit.platform:junit-platform-runner:1.5.2")
 }
