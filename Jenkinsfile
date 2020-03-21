@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Check') {
             steps {
-                ./gradlew :core-domain:check
+                sh './gradlew :core-domain:check'
             }
         }
     }
